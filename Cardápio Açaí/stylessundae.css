@@ -1,0 +1,41 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  html {
+    background-color: #f8f8ff;
+    font-family: 'Cherry Bomb One', cursive;
+  }
+  
+  
+.sundae {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .sabores {
+        display: flex;
+        flex-direction: column;
+       
+        margin: 0 12px 0 0;
+        margin-bottom: 20px;
+        vertical-align: middle;
+        position: relative;
+        top: -1px;
+      }
+      .order-button {
+        margin-bottom: 30px;
+        color:green;
+        background-color: #f8f8ff;
+        font-size: 15px;
+        border: solid black 2px;
+        font-family: 'Cherry Bomb One', cursive;
+        padding: 2px;
+        border-radius: 2px;
+        }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"content="Ruan Cardozo Marchiori">
+    <meta name=description content="Cardápio da Pareja açaiteria delivery">
+    <link rel="icon" type="image.png" href="./7.jpg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles700.css">
+    <title>Açaí de 700ml</title>
+</head>
+<body>
+     <!--Açaí de 700ml-->
+     <div class="box1">
+          <div class="complementos">
+            <h2> Você pode escolher 5 complementos:</h2>
+            <label><input type="checkbox" name="complemento" value="Disquete">Disquete</label>
+            <label><input type="checkbox" name="complemento" value="Leite em pó">Leite em pó</label>
+            <label><input type="checkbox" name="complemento" value="Gotas de chocolate">Gotas de chocolate</label>
+            <label><input type="checkbox" name="complemento" value="Granola">Granola</label>
+            <label><input type="checkbox" name="complemento" value="Chocoball">Chocoball</label>
+            <label><input type="checkbox" name="complemento" value="Ovomaltine">Ovomaltine</label>
+            <label><input type="checkbox" name="complemento" value="Amendoim">Amendoim</label>
+            <label><input type="checkbox" name="complemento" value="Paçoca">Paçoca</label>
+            <label><input type="checkbox" name="complemento" value="Bis">Bis</label>
+          </div>
+  
+          <div class="caldas">
+            <h2>Você pode escolher 3 caldas:</h2>
+            <label><input type="checkbox" name="calda" value="Leite condensado">Leite condensado</label>
+            <label><input type="checkbox" name="calda" value="Morango">Morango</label>
+            <label><input type="checkbox" name="calda" value="Chocolate">Chocolate</label>
+            <label><input type="checkbox" name="calda" value="Caramelo">Caramelo</label>
+            <label><input type="checkbox" name="calda" value="Mel">Mel</label>
+            <label><input type="checkbox" name="calda" value="Amora">Amora</label>
+          </div>
+
+          <div class="frutas">
+            <h2>Você pode escolher 3 frutas:</h2>
+            <label><input type="checkbox" name="fruta" value="Banana">Banana</label>
+            <label><input type="checkbox" name="fruta" value="Morango">Morango</label>
+            <label><input type="checkbox" name="fruta" value="Uva">Uva</label>
+          </div>
+  
+          <form class="order-form" action="https://wa.me/5528999123998" method="GET" target="_blank">
+            <input type="hidden" name="phone" value="28999123998">
+            <input type="hidden" name="text" id="pedidoText" value="Açaí de 700ml">
+            <input type="hidden" id="complementosHidden" name="complementos" value="">
+            <input type="hidden" id="caldasHidden" name="caldas" value="">
+            <input type="hidden" id="complementosextrasHidden" nome="complementos extras" value="">
+            <input type="hidden" id="frutasHidden" nome="frutas" value="">
+          </form>
+        
+  
+          <div class="extras">
+            <h2>Complementos extras:</h2>
+            <label><input type="checkbox" name="complemento" value="Nutella">Nutella - R$2,50</label>
+            <label><input type="checkbox" name="complemento" value="Fini">Fini-mini - R$2,00</label>
+            <label><input type="checkbox" name="complemento" value="KitKat">KitKat - R$ 2,00</label>
+          </div>
+          <div>
+            <button class="order-button">Enviar para "Meu Carrinho"</button>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

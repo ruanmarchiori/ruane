@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image.png" href="./7.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="button.css">
+    <title>Contador</title>
+</head>
+<body>
+    <div id="counter">
+        <div>
+            <button id="plus" class="count-button">
+                +
+            </button>
+            <span id="value">
+                0
+            </span>
+            <button id="minus" class="count-button">
+                -
+            </button>
+        </div>
+        <button id="reset">Resetar</button>
+    </div>
+
+    <script>
+        const value = document.getElementById('value');
+const plusButton = document.getElementById('plus');
+const minusButton = document.getElementById('minus');
+const resetButton = document.getElementById('reset');
+
+const upadateValue = () => {
+value.innerHTML = count;
+};
+
+let count = 0;
+let intervalId = 0;
+
+plusButton.addEventListener('mousedown', () => {
+    intervalId = setInterval(() => {
+        count += 1;
+        upadateValue();
+    }, 100);
+});  
+
+minusButton.addEventListener('mousedown', () => { 
+    intervalId = setInterval(() => {
+        count -= 1;
+        upadateValue();
+    }, 100);
+});  
+
+resetButton.addEventListener('click', () => { 
+    count = 0;
+    upadateValue();
+  }); 
+
+document.addEventListener('mouseup', () => clearInterval(intervalId));
+    </script>
+</body>
+</html>
